@@ -2,7 +2,7 @@ import pyfiglet
 from time import sleep
 
 def fancy_text(text):
-    return '\033[94;1m' + pyfiglet.figlet_format(text, font='isometric1') +  '\033[=0m'
+    return'\033[94;1m' + pyfiglet.figlet_format(text, font='isometric1' + '\033[0m'
 
 name = input("Enter your name: ")
 dream_job = input("Enter your dream job: ")
